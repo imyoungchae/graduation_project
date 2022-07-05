@@ -55,7 +55,7 @@ try:
             ## Setup mediapipe instance
             with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5) as pose:
                 while cap2.isOpened():
-                    ret, frame = cap.read()
+                    ret, frame = cap2.read()
                     str2="Romote Control Robotic Arm"
                     cv2.putText(frame, str2, (80, 40), cv2.FONT_HERSHEY_COMPLEX,1, (0, 0, 255))
                     # Recolor image to RGB
